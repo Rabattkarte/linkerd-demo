@@ -27,18 +27,21 @@ die_on_failure linkerd check --pre
 linkerd install --set proxyInit.runAsRoot=true |
   kubectl apply --filename -
 
-# Checking the linkerd install
+# Check & wait for the linkerd install
 die_on_failure linkerd check
 
-# install the on-cluster metrics stack
+# Install the on-cluster metrics stack
 linkerd viz install |
   kubectl apply --filename -
+
+# Check & wait for viz to be ready
+die_on_failure linkerd viz check
 
 # Install the emojivoto demo app with injected linkerd
 linkerd inject https://run.linkerd.io/emojivoto.yml |
   kubectl apply --filename -
 
-# Let's check the proxy/sidecars
+# Check & wait for proxy/sidecars in ns emojivoto
 die_on_failure linkerd check --proxy --namespace emojivoto
 
 # Final check
