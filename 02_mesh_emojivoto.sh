@@ -2,7 +2,7 @@
 . ./lib.sh
 
 # Install the emojivoto demo app with injected linkerd
-command="linkerd inject https://run.linkerd.io/emojivoto.yml | kubectl apply --filename -"
+command="linkerd inject ./emojivoto.yaml | kubectl apply --filename -"
 print_exec_cmd "$command"
 
 # Check & wait for proxy/sidecars in ns emojivoto

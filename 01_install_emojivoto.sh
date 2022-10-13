@@ -2,7 +2,7 @@
 . ./lib.sh
 
 # Install the bare emojivoto demo app
-command="kubectl apply --filename https://run.linkerd.io/emojivoto.yml"
+command="kubectl apply --filename ./emojivoto.yaml"
 print_exec_cmd "$command"
 
 for command in \
