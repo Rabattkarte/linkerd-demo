@@ -32,13 +32,6 @@ linkerd viz install |
 # Check & wait for viz to be ready
 die_on_failure linkerd viz check
 
-# Install the emojivoto demo app with injected linkerd
-linkerd inject https://run.linkerd.io/emojivoto.yml |
-  kubectl apply --filename -
-
-# Check & wait for proxy/sidecars in ns emojivoto
-die_on_failure linkerd check --proxy --namespace emojivoto
-
 # Final check
 die_on_failure linkerd check
 
