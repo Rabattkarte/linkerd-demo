@@ -2,9 +2,9 @@
 
 ## Requirements
 
-- [minikube](https://minikube.sigs.k8s.io/)
+- [minikube](https://minikube.sigs.k8s.io/) version `v1.26.1`
   - with configured [docker driver](https://minikube.sigs.k8s.io/docs/drivers/docker/)
-- [linkerd CLI](https://linkerd.io/2.12/getting-started/)
+- [linkerd CLI](https://linkerd.io/2.12/getting-started/) version `stable-2.11.5`
 
 ## Configration Options
 
