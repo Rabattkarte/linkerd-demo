@@ -23,6 +23,10 @@ minikube profile "$MK_PROFILE_NAME"
 # Run linkerd pre-checks
 die_on_failure linkerd check --pre
 
+# Install Linkerd CRDs
+linkerd install --crds |
+  kubectl apply --filename -
+
 # Install linkerd
 linkerd install --set proxyInit.runAsRoot=true |
   kubectl apply --filename -
