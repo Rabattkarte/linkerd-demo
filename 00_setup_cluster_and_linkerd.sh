@@ -1,14 +1,5 @@
 #!/bin/bash
-
-function die_on_failure {
-  "$@"
-  local status=$?
-  if ((status != 0)); then
-    echo "error with $1" >&2
-    exit 1
-  fi
-  return $status
-}
+. ./lib.sh
 
 # Variables
 MK_PROFILE_NAME="${MK_PROFILE_NAME:-linkerd}"
