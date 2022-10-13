@@ -47,5 +47,5 @@ die_on_failure linkerd check --proxy --namespace emojivoto
 # Final check
 die_on_failure linkerd check
 
-# Make the app & dashboard available
-./10_run_dashboard_and_app.sh
+# Return the information about our minikube cluster
+minikube profile
