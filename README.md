@@ -19,7 +19,7 @@
 
 ![emojivoto-topology](docs/emojivoto-topology.png)
 
-:arrow_right: image taken from: [BuoyantIO/emojivoto]([https://](https://github.com/BuoyantIO/emojivoto))
+:arrow_right: image taken from: [BuoyantIO/emojivoto](https://github.com/BuoyantIO/emojivoto)
 
 ---
 
@@ -33,20 +33,20 @@
 
 **FYI: This script can be re-run infinitely.**
 
-1. Execute [01_install_emojivoto.sh](01_install_emojivoto.sh).
-1. After that [expose the app](#expose-the-emojivoto-app-and-forward-the-viz-dashboard).
+1. Execute [01_install_emojivoto.sh](./01_install_emojivoto.sh).
+1. After that [expose the app](#globe_with_meridians-expose-the-emojivoto-app-and-forward-the-viz-dashboard).
 
 ## :link: Mesh the emojivoto app
 
 **FYI: This script can be re-run infinitely.**
 
-1. Execute [02_mesh_emojivoto.sh](02_mesh_emojivoto.sh).
-1. After that [expose the app](#expose-the-emojivoto-app-and-forward-the-viz-dashboard).
+1. Execute [02_mesh_emojivoto.sh](./02_mesh_emojivoto.sh).
+1. After that [expose the app](#globe_with_meridians-expose-the-emojivoto-app-and-forward-the-viz-dashboard).
 
 ## :globe_with_meridians: Expose the emojivoto app and forward the viz dashboard
 
 1. Start a new terminal.
-1. Execute [10_run_dashboard_and_app.sh](10_run_dashboard_and_app.sh).
+1. Execute [10_run_dashboard_and_app.sh](./10_run_dashboard_and_app.sh).
 1. Access the Linkerd dashboard and the demo app via the printed URLs.
 1. Kill the terminal to stop the forwards.
 
@@ -62,4 +62,4 @@
 
 - [minikube docs](https://minikube.sigs.k8s.io/docs/)
 - [Linkerd docs](https://linkerd.io/docs/)
-- [emojivoto sources]([https://](https://github.com/BuoyantIO/emojivoto))
+- [emojivoto sources](https://github.com/BuoyantIO/emojivoto)
