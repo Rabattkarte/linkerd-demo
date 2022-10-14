@@ -60,6 +60,11 @@
 
 ## :clipboard: References
 
-- [minikube docs](https://minikube.sigs.k8s.io/docs/)
-- [Linkerd docs](https://linkerd.io/docs/)
-- [emojivoto sources](https://github.com/BuoyantIO/emojivoto)
+- [minikube documentation](https://minikube.sigs.k8s.io/docs/)
+- [Linkerd documentation](https://linkerd.io/docs/)
+- [emojivoto application sources, GitHub](https://github.com/BuoyantIO/emojivoto)
+- [CNCF Cloud Native Landscape (Service Mesh category)](https://landscape.cncf.io/card-mode?category=service-mesh&grouping=category)
+- [servicemesh.es, Service Mesh comparison](https://servicemesh.es/)
+- [How eBPF Streamlines the Service Mesh, article](https://thenewstack.io/how-ebpf-streamlines-the-service-mesh/)
+- [How eBPF will solve Service Mesh – Goodbye Sidecars, blog post](https://isovalent.com/blog/post/2021-12-08-ebpf-servicemesh/)
+- [Rabattkarte/linkerd-demo sources, this GitHub repository](https://github.com/Rabattkarte/linkerd-demo)
